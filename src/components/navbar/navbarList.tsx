@@ -1,26 +1,41 @@
 import React from 'react'
-import { navItems } from '../../data/navItemsData'
-import { NavItems } from '../../constants/constants'
+import { navItems } from '../../data/data'
+import { Contact, NavItems } from '../../constants/constants'
 import { UseMoveEvents } from '../../customHooks/useMoveEvents'
+import logo from "../../images/ink.png"
+import AppointmentButton from '../Buttons/appointmentButton'
+
 
 type Events = {
   onMouseOver : () => void,
   onMouseLeave : () => void,
 }
 
-export const NavbarList = () => {
+type Props = {
+  ULClasses : string
+  LIClasses : string
+}
+
+export const NavbarList = ({ULClasses,LIClasses} : Props) => {
 const [move,events,width] = UseMoveEvents()
     
   return (  
-    <ul className='flex justify-center group items-center relative font-bold text-[12px]'>
+  
+    <ul className={`${ULClasses}`}>
         {
             navItems.map(({id}) => {
                 return(
-                    <li className='px-5' key={id} id={id} {...events as Events}>{id}</li>
+                    <li className={`${LIClasses}`} key={id} id={id} {...events as Events}>{id}</li>
                 )
             })
         }
-    <li className={`absolute h-[1%] ${width} bg-[#C5C5C5] top-[80%] left-0 ${move} duration-500`}></li>
+    <li className={`hidden md:absolute lg:absolute h-[1%] ${width} bg-[#C5C5C5] top-[80%] left-0 ${move} duration-500`}></li>
+    <li className='flex md:hidden lg:hidden py-2 mt-3 px-5  justify-center items-center flex-col w-full '>
+      <img className='w-[8rem] h-[5rem]' src={logo} alt="logo" />
+      <span className='bg-[#741102] inline-block px-5 py-2 mb-3'>{Contact.number}</span>
+      <div><AppointmentButton/></div>
+      </li>
    </ul>
+   
   )
 }

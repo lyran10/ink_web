@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 interface MyContextType {
   showItems: string;
@@ -17,11 +17,12 @@ interface Children {
 }
 
 const MyContext = createContext<MyContextType | undefined>(undefined);
+
 export const ContextAPI = ({ children } : Children ) => {
-  const [showItems,setShowItems] = useState<string>("translate-x-0")
+  const [showItems,setShowItems] = useState<string>("left-[100%] opacity-[0]")
   const [arrow,setArrow] = useState<{arrow1 : string, arrow2 : string,arrow3 : string}>({
     arrow1 : "-translate-y-2",
-    arrow2 : "w-8",
+    arrow2 : "w-5",
     arrow3 : "translate-y-2"
   })
 
@@ -29,7 +30,7 @@ export const ContextAPI = ({ children } : Children ) => {
   return (
     <MyContext.Provider
       value={{
-        showItems,setShowItems,arrow,setArrow
+        showItems, setShowItems, arrow, setArrow
       }}
     >
       {children}

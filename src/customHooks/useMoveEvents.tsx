@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { NavItems } from '../constants/constants'
-import { moveNavCursor } from '../data/navItemsData'
+import { moveNavCursor } from '../data/data'
 
 type NavigationItems = {
     HOME: string;

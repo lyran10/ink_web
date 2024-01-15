@@ -1,31 +1,17 @@
-import React,{useState} from 'react'
+import React from 'react'
+import { NavbarList } from '../navbar/navbarList'
 import { ContextState } from '../../context/context'
 import { Context } from 'vm'
 
-export const Button = () => {
-  const {showItems,setShowItems,arrow,setArrow} = ContextState() as Context;
-  const [move,setMove] = useState<string>("translate-y-[50vh] translate-x-[80vh] text-[100px]")
-  
-  const [background,setBackground] = useState<string>("bg-transparent")
-
-  const handleArrow = () => {
-    setBackground(z => z === "bg-transparent" ? "bg-black" : "bg-transparent")
-    if(arrow.arrow1 === "-translate-y-2"){
-      setArrow({arrow1 : "-rotate-[33deg] -translate-y-2",arrow2 : "rotate-[90deg] translate-x-[14px] w-[36px]",arrow3 : "rotate-[33deg] translate-y-2"})
-      setShowItems("translate-x-6")
-    }else{
-      setArrow({arrow1 : "-translate-y-2",arrow2 : "w-8",arrow3 : "translate-y-2 "})
-      setShowItems("translate-x-0")
-    }
-  }
+export const Sidenav = () => {
+const {showItems} = ContextState() as Context
 
   return (
-    <div className='mr-10'>
-         <div onClick={handleArrow} className='cursor-pointer duration-500 rounded-full flex justify-center items-center flex-col h-[40px] w-[40px]'>
-        <div className={`w-8 h-[1px] bg-cyan-500 ${arrow.arrow1} duration-200 ${move === "translate-y-0 translate-x-0" ? "bg-cyan-200" : ""} `}></div>
-        <div className={`h-[1px] bg-cyan-500 ${move === "translate-y-0 translate-x-0" ? "bg-cyan-200" : ""} duration-200 ${arrow.arrow2}`}></div>
-        <div className={`w-8 h-[1px]  bg-cyan-500 ${arrow.arrow3} duration-200 ${move === "translate-y-0 translate-x-0" ? "bg-cyan-200" : ""}`}></div>
-      </div>
+    <div className={`flex md:hidden lg:hidden fixed bg-[#f5f5f5] h-[90vh] w-full ${showItems} top-[80px] duration-500`}>
+      <NavbarList 
+      ULClasses='flex justify-start items-start flex-col group relative font-bold text-[20px] w-full h-full' 
+      LIClasses='py-5 ps-5 w-full text-[#B78C56] cursor-pointer duration-500 hover:bg-[#741102] hover:text-[#f5f5f5]'/>
     </div>
   )
 }
+

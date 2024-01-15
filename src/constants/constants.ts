@@ -10,9 +10,9 @@ export enum NavItems {
 export enum Titles {
     banner = "Ink your story, wear your journey,",
     highlightBannerHeader = "where art meets skin.",
-    recentArt = "Recent Art"
+    recentArt = "Recent Art",
+    qoute1 = '"Ink to remind, not to regret."'
 }
-
 
 // buttons content
 export enum Buttons {
@@ -22,4 +22,10 @@ export enum Buttons {
 // timers
 export enum Timers  {
     time = 2000
+}
+
+// contact
+
+export enum Contact {
+    number = "+917387776775"
 }
