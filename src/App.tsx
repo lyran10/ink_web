@@ -7,7 +7,7 @@ import { Navbar } from './components/navbar/navbar';
 
 function App() {
   return (
-    <div className="bg-[#f5f5f5]">
+    <div className="bg-black">
       <LogoLoader/>
       <Navbar/>
       <Routes>

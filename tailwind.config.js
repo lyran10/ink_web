@@ -21,6 +21,9 @@ module.exports = {
       },
       backgroundImage : {
         banner : "url(../src/images/studio1.jpg);",
+        quote : "url(../src/images/quotes.jpg);",
+        studio : "url(../src/images/studio.jpg);",
+        ladyTattoo : "url(../src/images/ladyWithFlowers.jpg);",
       }
     },
   },
