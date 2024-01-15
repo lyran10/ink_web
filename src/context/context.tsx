@@ -25,7 +25,6 @@ export const ContextAPI = ({ children } : Children ) => {
     arrow3 : "translate-y-2"
   })
 
-
 // all the states and functions that have to be used in other components
   return (
     <MyContext.Provider
