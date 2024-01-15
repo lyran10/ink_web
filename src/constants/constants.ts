@@ -7,9 +7,10 @@ export enum NavItems {
 }
 
 // header content
-export enum Headers {
+export enum Titles {
     banner = "Ink your story, wear your journey,",
-    highlightBannerHeader = "where art meets skin."
+    highlightBannerHeader = "where art meets skin.",
+    recentArt = "Recent Art"
 }
 
 

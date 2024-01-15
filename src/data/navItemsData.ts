@@ -1,37 +1,33 @@
 export const navItems = [
     {
-        id : "Home",
-        translate : "translate-x-0",
+        id : "HOME",
     },
     {
-        id : "About",
-        translate : "translate-x-[50px]",
+        id : "ABOUT",
     },
     {
-        id : "Awards",
-        translate : "translate-x-[100px]",
+        id : "AWARDS",
     },
     {
-        id : "Contact",
-        translate : "translate-x-[150px]",
+        id : "CONTACT",
     },
 ]
 
 export const moveNavCursor = {
-        Home : {
-            move : "translate-x-0",
-            width : "w-[18%]"
+        HOME : {
+            move : "translate-x-[13px]",
+            width : "w-[15%]"
         },
-        About : {
-            move :"translate-x-[50px]",
+        ABOUT : {
+            move :"translate-x-[89px]",
+            width : "w-[15%]"
+        },
+        AWARDS : {
+            move : "translate-x-[166px]",
             width : "w-[20%]"
         },
-        Awards : {
-            move : "translate-x-[100px]",
-            width : "w-[25%]"
-        },
-        Contact : {
-            move : "translate-x-[160px]",
-            width : "w-[25%]"
+        CONTACT : {
+            move : "translate-x-[256px]",
+            width : "w-[20%]"
         }
 }

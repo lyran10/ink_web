@@ -3,10 +3,10 @@ import { NavItems } from '../constants/constants'
 import { moveNavCursor } from '../data/navItemsData'
 
 type NavigationItems = {
-    Home: string;
-    About: string;
-    Awards: string;
-    Contact: string;
+    HOME: string;
+    ABOUT: string;
+    AWARDS: string;
+    CONTACT: string;
   };
 
 
@@ -21,6 +21,7 @@ const mouseOver = (e : React.MouseEvent<HTMLLIElement>) => {
 
 const mouseLeave = () => {
     setMove("translate-x-0")
+    setWidth("w-[0%]")
 }
 
 const events = {
