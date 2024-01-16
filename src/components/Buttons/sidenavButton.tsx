@@ -18,9 +18,9 @@ export const SidenavButton = () => {
   return (
     <div className='mr-10'>
       <div onClick={handleArrow} className='cursor-pointer duration-500  rounded-full flex justify-center items-center flex-col h-[40px] w-[40px]'>
-        <div className={`w-8 h-[1px] self-end bg-[rgb(183,140,86)] ${arrow.arrow1} duration-200`}></div>
-        <div className={`h-[1px] self-end bg-[rgb(183,140,86)] ${arrow.arrow2} duration-200`}></div>
-        <div className={`w-8 h-[1px] self-end bg-[rgb(183,140,86)] ${arrow.arrow3} duration-200`}></div>
+        <div className={`w-8 h-[1px] self-end ${arrow.arrow1 === "-rotate-[33deg] -translate-y-2 w-8" ? "bg-[#f5f5f5]" : "bg-[rgb(183,140,86)]"}  ${arrow.arrow1} duration-200`}></div>
+        <div className={`h-[1px] self-end ${arrow.arrow1 === "-rotate-[33deg] -translate-y-2 w-8" ? "bg-[#f5f5f5]" : "bg-[rgb(183,140,86)]"}  ${arrow.arrow2} duration-200`}></div>
+        <div className={`w-8 h-[1px] self-end ${arrow.arrow1 === "-rotate-[33deg] -translate-y-2 w-8" ? "bg-[#f5f5f5]" : "bg-[rgb(183,140,86)]"}  ${arrow.arrow3} duration-200`}></div>
       </div>
     </div>
   )

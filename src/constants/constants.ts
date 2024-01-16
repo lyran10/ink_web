@@ -11,16 +11,19 @@ export enum Titles {
     banner = "Ink your story, wear your journey,",
     highlightBannerHeader = "where art meets skin.",
     recentArt = "Recent Art",
-   
-    studio = "The Studio"
+    artist = "The Artist",
+    studio = "The Studio",
+    artistName = "Tennis Ramteke"
 }
 
 // quotes, paragraphs, keywords
 export enum QuotesAndPara {
+    walkIn = "Walk-ins welcome at the studio.",
     aboutTattoo = "Tattoos are not just ink on skin, they are visual echoes of the soul's journey, each mark telling a tale of strength, growth, and self-discovery.",
     qoute1 = '"Inked stories on skin, whispers of the soul."',
     studioParagraph = "Ink Credible tattoo studio, where cleanliness is our first priority, ensuring a hygienic and safe space for your artistic journey. Immerse yourself in a friendly environment, where our passionate artists are dedicated to turning your ideas into vibrant realities. Spend hours discussing your unique design amidst a hassle-free experience, with ample parking and convenient amenities surrounding our studio. Here, your imagination takes center stage, and our artists are committed to bringing your vision to life with precision and creativity. Explore the artistry within our walls, where the fusion of a welcoming atmosphere and meticulous cleanliness sets the stage for an unforgettable tattooing experience.",
-    studioQuote = '"Ink to remind, not to regret."'
+    studioQuote = '"Ink to remind, not to regret."',
+    artistQuote = '"Ink speaks when words fail. A tattoo artist, the silent storyteller of skin."'
 }
 
 export enum Keywords {

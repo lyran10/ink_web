@@ -1,15 +1,15 @@
 import React from 'react'
 import { Header } from '../common/headers'
 import { QuotesAndPara, Titles } from '../../constants/constants'
-import studio from "../../images/studio.jpg"
-import studio2 from "../../images/studio2.jpg"
+import studio from "../../images/studio/studio.jpg"
+import studio2 from "../../images/studio/studio2.jpg"
 import { Qoutes } from '../common/qoutes'
 
 export const Studio = () => {
   return (
-    <div className='text-[#f5f5f5]'>
+    <section className='text-[#f5f5f5]'>
       <Header header={Titles.studio}/>
-      <div className='w-full flex flex-col gap-5 md:flex-row lg:flex-col'>
+      <div className='w-full flex flex-col gap-5 text-center font-bold'>
         <div className='w-[100%] md:w-[50%] lg:w-[100%]'>
             <span className='text-[1.2rem] md:text-[1.5rem] lg:text-[1.5rem]'>
               {QuotesAndPara.studioParagraph}
@@ -22,6 +22,6 @@ export const Studio = () => {
         </div> */}
       </div>
       
-    </div>
+    </section>
   )
 }

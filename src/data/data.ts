@@ -1,7 +1,7 @@
-import recent1 from "../images/recent1.jpg"
-import recent2 from "../images/recent2.jpg"
-import recent3 from "../images/recent3.jpg"
-import recent4 from "../images/recent4.jpg"
+import recent1 from "../images/recent/recent1.jpg"
+import recent2 from "../images/recent/recent2.jpg"
+import recent3 from "../images/recent/recent3.jpg"
+import recent4 from "../images/recent/recent4.jpg"
 
 
 // nav

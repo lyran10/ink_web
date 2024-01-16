@@ -20,10 +20,11 @@ module.exports = {
         }
       },
       backgroundImage : {
-        banner : "url(../src/images/studio1.jpg);",
-        quote : "url(../src/images/quotes.jpg);",
-        studio : "url(../src/images/studio.jpg);",
-        ladyTattoo : "url(../src/images/ladyWithFlowers.jpg);",
+        banner : "url(../src/images/studio/studio1.jpg);",
+        quote : "url(../src/images/quotesImage/quotes.jpg);",
+        studio : "url(../src/images/studio/studio.jpg);",
+        ladyTattoo : "url(../src/images/quotesImage/ladyWithFlowers.jpg);",
+        artist : "url(../src/images/artist/artist3.jpg);",
       }
     },
   },

@@ -9,7 +9,9 @@ interface MyContextType {
     arrow1: string;
     arrow2: string;
     arrow3: string;
-}>>
+}>>,
+showHome : boolean
+setShowHome : React.Dispatch<React.SetStateAction<boolean>>
 }
 
 interface Children {
@@ -25,12 +27,13 @@ export const ContextAPI = ({ children } : Children ) => {
     arrow2 : "w-5",
     arrow3 : "translate-y-2"
   })
+  const [showHome,setShowHome] = useState<boolean>(false)
 
 // all the states and functions that have to be used in other components
   return (
     <MyContext.Provider
       value={{
-        showItems, setShowItems, arrow, setArrow
+        showItems, setShowItems, arrow, setArrow, showHome, setShowHome
       }}
     >
       {children}
