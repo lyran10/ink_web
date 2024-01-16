@@ -1,3 +1,4 @@
+import { StudioPara } from "../constants/constants"
 import recent1 from "../images/recent/recent1.jpg"
 import recent2 from "../images/recent/recent2.jpg"
 import recent3 from "../images/recent/recent3.jpg"
@@ -40,7 +41,6 @@ export const moveNavCursor = {
 }
 
 // recent art cards
-
 export const recentArtCards = [
     {
         image : recent1
@@ -54,5 +54,27 @@ export const recentArtCards = [
     {
         image : recent4
     },
+]
 
+export const studioData = [
+    {
+        id : "clean",
+        header : "Cleanliness",
+        para : StudioPara.cleanliness
+    },
+    {
+        id : "envirnoment",
+        header : "Welcoming Envirnoment",
+        para : StudioPara.envirnoment
+    },
+    {
+        id : "discuss",
+        header : "Tattoo Discussion",
+        para : StudioPara.discussion
+    },
+    {
+        id : "parking",
+        header : "Parking",
+        para : StudioPara.parking
+    }
 ]
