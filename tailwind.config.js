@@ -19,12 +19,16 @@ module.exports = {
           '50%,100%': { transform: 'translateX(400px)' },
         }
       },
+      boxShadow : {
+        testimonials: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"
+      },
       backgroundImage : {
         banner : "url(../src/images/studio/studio1.jpg);",
         quote : "url(../src/images/quotesImage/quotes2.jpg);",
         studio : "url(../src/images/studio/studio.jpg);",
         ladyTattoo : "url(../src/images/quotesImage/ladyWithFlowers.jpg);",
         artist : "url(../src/images/artist/artist3.jpg);",
+        quote3 : "url(../src/images/quotesImage/quotes3.jpg);",
       }
     },
   },

@@ -13,7 +13,8 @@ export enum Titles {
     recentArt = "Recent Art",
     artist = "The Artist",
     studio = "The Studio",
-    artistName = "Tennis Ramteke"
+    artistName = "Tennis Ramteke",
+    testimonial = "The Testimonials"
 }
 
 // quotes, paragraphs, keywords
@@ -21,9 +22,10 @@ export enum Titles {
 export enum QuotesAndPara {
     walkIn = "Walk-ins welcome at the studio.",
     aboutTattoo = "Tattoos are not just ink on skin, they are visual echoes of the soul's journey, each mark telling a tale of strength, growth, and self-discovery.",
-    qoute1 = '"Inked stories on skin, whispers of the soul."',
-    studioQuote = '"Ink to remind, not to regret."',
-    artistQuote = '"Ink speaks when words fail. A tattoo artist, the silent storyteller of skin."'
+    qoute1 = '" Inked stories on skin, whispers of the soul. "',
+    studioQuote = '" Ink to remind, not to regret. "',
+    artistQuote = '" Ink speaks when words fail. A tattoo artist, the silent storyteller of skin. "',
+    quote3 = '" Satisfaction fuels our passion to continually exceed expectations, turning transactions into lasting smiles. "'
 }
 
 // studio

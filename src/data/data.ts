@@ -3,6 +3,7 @@ import recent1 from "../images/recent/recent1.jpg"
 import recent2 from "../images/recent/recent2.jpg"
 import recent3 from "../images/recent/recent3.jpg"
 import recent4 from "../images/recent/recent4.jpg"
+import testimonial1 from "../images/testimonials/testimonial1.jpg"
 
 
 // nav
@@ -56,6 +57,7 @@ export const recentArtCards = [
     },
 ]
 
+// studio
 export const studioData = [
     {
         id : "clean",
@@ -77,4 +79,31 @@ export const studioData = [
         header : "Parking",
         para : StudioPara.parking
     }
+]
+
+// testimonials
+
+export const testimonials = [
+    {
+        id : "test1",
+        name : "Vikram palan",
+        testimonial : '" A great experience from the studio. Made by tennis ramteke. A great tattoo artist making detailed tattoos with a great ease. "',
+        image : testimonial1
+    },
+    {
+        id : "test2",
+        name : "Apoorva Hazari",
+        testimonial : '" Excellent finishing. Best place to get inked. Thanks for the amazing Tattoo "',
+    },
+    {
+        id : "test3",
+        name : "vishal shende",
+        testimonial : '" Best artist. Having lot of experience. Totally worth it. "',
+    },
+    {
+        id : "test4",
+        name : "Mercy Gaikwad",
+        testimonial : '" Great tattoo artist. Amazing experience wid him. You nailed it man ♥️stay blessed always. Keep doing excellent work....God bless You "',
+    },
+
 ]

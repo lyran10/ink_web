@@ -5,6 +5,7 @@ import { Qoutes } from '../common/qoutes'
 import { QuotesAndPara, Titles } from '../../constants/constants'
 import { Studio } from './studio'
 import { Artist } from './artist'
+import { Testimonials } from './testimonials'
 
 export const Home = () => {
   return (
@@ -17,6 +18,8 @@ export const Home = () => {
       <Qoutes qoute={QuotesAndPara.artistQuote} lines={""} bg="before:bg-artist"/>
       <Studio/>
       <Qoutes qoute={QuotesAndPara.studioQuote} lines={""} bg="before:bg-ladyTattoo"/>
+      <Testimonials />
+      <Qoutes qoute={QuotesAndPara.quote3} lines={""} bg="before:bg-quote3"/>
       <div className='h-[100vh]'></div>
       </div>
     </main>

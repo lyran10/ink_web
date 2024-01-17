@@ -9,7 +9,7 @@ export const Artist = () => {
     <section className='w-full flex flex-col'>
         <Header header={Titles.artist}/>
         <div className='w-full flex flex-col md:flex-row lg:flex-row text-[#f5f5f5]'>
-        <div className="w-[100%]  md:w-[50%] lg:w-[25%] flex justify-center items-center">
+        <div className="w-[100%]  md:w-[50%] lg:w-[20%] flex justify-center items-center">
             <img className="w-[80%] md:w-full lg:w-full h-[500px]" src={artist2} alt='artist'/>
         </div>
         <div className='w-[100%] md:w-[80%] lg:w-[70%] flex flex-col gap-5 justify-center items-start p-0 md:p-3 lg:p-5 text-[1rem] md:text-[1rem] lg:text-[1rem]'>
