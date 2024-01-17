@@ -11,7 +11,7 @@ function App() {
   const {showHome} = ContextState() as Context
 
   return (
-    <div className="bg-black">
+    <div className="bg-[#040303]">
       <LogoLoader/>
       <div className={`${showHome ? "block" : "hidden"}`}>
       <Navbar/>

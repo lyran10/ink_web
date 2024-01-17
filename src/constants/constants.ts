@@ -14,7 +14,7 @@ export enum Titles {
     artist = "The Artist",
     studio = "The Studio",
     artistName = "Tennis Ramteke",
-    testimonial = "The Testimonials"
+    testimonial = "Testimonials"
 }
 
 // quotes, paragraphs, keywords
@@ -44,7 +44,12 @@ export enum Buttons {
 
 // timers
 export enum Timers  {
-    time = 2000
+    time = 2000,
+    // testimonials
+    enable = 1500,
+    currentTimer = 800,
+    transOutTimer = 1000,
+    transInTimer = 1200,
 }
 
 // contact

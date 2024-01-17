@@ -5,22 +5,26 @@ import { Qoutes } from '../common/qoutes'
 import { QuotesAndPara, Titles } from '../../constants/constants'
 import { Studio } from './studio'
 import { Artist } from './artist'
-import { Testimonials } from './testimonials'
+import { Testimonials } from './testimonials/testimonials'
+import { SocialMedia } from '../socialMedia/socialMedia'
+import { Footer } from '../common/footer/footer'
 
 export const Home = () => {
   return (
-    <main className='flex flex-col gap-[5rem]'>
+    <main className='flex flex-col gap-[5rem] overflow-hidden'>
       <Banner/>
+      <div className='hidden md:block lg:block'><SocialMedia /></div>
       <div className='p-5'>
       <RecentArt/>
       <Qoutes qoute={QuotesAndPara.qoute1} lines={QuotesAndPara.aboutTattoo} bg="before:bg-quote"/>
-      <Artist />
-      <Qoutes qoute={QuotesAndPara.artistQuote} lines={""} bg="before:bg-artist"/>
       <Studio/>
+      <Qoutes qoute={QuotesAndPara.artistQuote} lines={""} bg="before:bg-artist"/>
+      <Artist />
       <Qoutes qoute={QuotesAndPara.studioQuote} lines={""} bg="before:bg-ladyTattoo"/>
       <Testimonials />
       <Qoutes qoute={QuotesAndPara.quote3} lines={""} bg="before:bg-quote3"/>
-      <div className='h-[100vh]'></div>
+      <Footer/>
+      {/* <div className='h-[100vh]'></div> */}
       </div>
     </main>
   )

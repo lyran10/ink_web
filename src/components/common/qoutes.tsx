@@ -11,7 +11,7 @@ type Props = {
 
 export const Qoutes = ({lines,qoute,bg} :Props) => {
   return (
-    <div className={`h-[25rem] w-full relative before:content-"" before:h-full before:w-full before:absolute ${bg} before:bg-cover before:bg-center before:brightness-[0.3] before:bg-fixed mb-20`}>
+    <div className={`h-[25rem] w-full border-t border-t-[5px] border-orange-600 relative before:content-"" before:h-full before:w-full before:absolute ${bg} before:bg-cover before:bg-center before:brightness-50 before:bg-fixed`}>
         {/* <video className='w-full h-[15rem] absolute' src={video} autoPlay muted loop>
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.

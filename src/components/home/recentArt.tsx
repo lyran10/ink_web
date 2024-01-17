@@ -9,7 +9,7 @@ export const RecentArt = () => {
       <Header header={Titles.recentArt}/>
       <div className='flex w-full flex-wrap justify-center gap-1'>
         {
-          recentArtCards.map(({image}) => {
+          recentArtCards.map(({image} : { image : string}) => {
             return(
               <div className='w-[300px] h-[400px]'>
                 <img  src={image} alt="" />

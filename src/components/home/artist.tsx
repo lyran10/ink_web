@@ -6,7 +6,7 @@ import DiscussButton from '../Buttons/discussButton'
 
 export const Artist = () => {
   return (
-    <section className='w-full flex flex-col'>
+    <section className='w-full flex flex-col bg-[#040303]'>
         <Header header={Titles.artist}/>
         <div className='w-full flex flex-col md:flex-row lg:flex-row text-[#f5f5f5]'>
         <div className="w-[100%]  md:w-[50%] lg:w-[20%] flex justify-center items-center">
