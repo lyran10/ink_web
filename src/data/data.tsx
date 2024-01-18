@@ -131,17 +131,17 @@ export const footerData = [
     {
         id : "phone",
         content : Contact.number,
-        icon : <FaPhone size={40}/>
+        icon : <FaPhone size={30}/>
     },
     {
         id : "location",
         content : "Near Durga Temple Plot No 10, Opp Vailla Apartment, Vijay Nagar, Nagpur, Maharashtra 440013",
-        icon : <FaLocationDot size={40} />
+        icon : <FaLocationDot size={30} />
     },
     {
         id : "email",
         content : "user@gmail.com",
-        icon : <MdEmail  size={40}/>
+        icon : <MdEmail  size={30}/>
     },
 
 ]

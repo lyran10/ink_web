@@ -1,6 +1,7 @@
 import React from 'react'
 import { QuotesAndPara, Titles } from '../../constants/constants'
 import  AppointmentButton  from '../Buttons/appointmentButton'
+import { SocialMediaIcons } from '../common/footer/socialMediaIcons'
 
 export const Banner = () => {
   return (
@@ -10,6 +11,9 @@ export const Banner = () => {
        <h1 className='font-extrabold text-[2rem] md:text-[3rem] lg:text-[3.5rem]'>{Titles.banner} <em className='text-[#B78C56]'>{Titles.highlightBannerHeader}</em></h1>
        <span className='text-start text-[1rem] md:text-[1.5rem] lg:text-[1.5rem] w-full text-[#B78C56]'>{QuotesAndPara.walkIn}</span>
       <AppointmentButton />
+      <div className='flex self-start md:hidden lg:hidden'>
+        <SocialMediaIcons/>
+      </div>
       </div>
     </div>
   </section>

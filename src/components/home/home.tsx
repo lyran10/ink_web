@@ -14,7 +14,7 @@ export const Home = () => {
     <main className='flex flex-col gap-[5rem] overflow-hidden'>
       <Banner/>
       <div className='hidden md:block lg:block'><SocialMedia /></div>
-      <div className='p-5'>
+      <div className='p-0 md:p-5 lg:p-5'>
       <RecentArt/>
       <Qoutes qoute={QuotesAndPara.qoute1} lines={QuotesAndPara.aboutTattoo} bg="before:bg-quote"/>
       <Studio/>
