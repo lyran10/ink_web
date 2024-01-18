@@ -7,6 +7,10 @@ import testimonial1 from "../images/testimonials/testimonial1.jpg"
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaLocationDot,FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import video1 from "../videos/VID-20240111-WA0052.mp4"
+import video2 from "../videos/WhatsApp Video 2024-01-11 at 20.30.28_73f8a0ec.mp4"
+import video3 from "../videos/VID-20240111-WA0053.mp4"
+import video4 from "../videos/VID-20240111-WA0058.mp4"
 
 
 // nav
@@ -84,6 +88,26 @@ export const studioData = [
     }
 ]
 
+//artist
+export const artistVideos = [
+    {
+        id : 1,
+        video : video1
+    },
+    {
+        id : 2,
+        video : video2
+    },
+    {
+        id : 3,
+        video : video3
+    },
+    {
+        id : 4,
+        video : video4
+    }
+]
+
 // testimonials
 
 export const testimonials = [
@@ -144,4 +168,28 @@ export const footerData = [
         icon : <MdEmail  size={30}/>
     },
 
+]
+
+// inputs
+export const inputs = [
+    {
+        id : "firstName",
+        type : "text",
+        content : "First name",
+    },
+    {
+        id : "lastName",
+        type : "text",
+        content : "Last name",
+    },
+    {
+        id : "phone",
+        type : "text",
+        content : "Phone",
+    },
+    {
+        id : "email",
+        type : "text",
+        content : "Email",
+    },
 ]

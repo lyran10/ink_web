@@ -8,6 +8,7 @@ import { Artist } from './artist'
 import { Testimonials } from './testimonials/testimonials'
 import { SocialMedia } from '../socialMedia/socialMedia'
 import { Footer } from '../common/footer/footer'
+import { Form } from './form'
 
 export const Home = () => {
   return (
@@ -23,6 +24,7 @@ export const Home = () => {
       <Qoutes qoute={QuotesAndPara.studioQuote} lines={""} bg="before:bg-ladyTattoo"/>
       <Testimonials />
       <Qoutes qoute={QuotesAndPara.quote3} lines={""} bg="before:bg-quote3"/>
+      <Form />
       <Footer/>
       {/* <div className='h-[100vh]'></div> */}
       </div>

@@ -12,10 +12,6 @@ type Props = {
 export const Qoutes = ({lines,qoute,bg} :Props) => {
   return (
     <div className={`h-[25rem] w-full border-t border-t-[5px] border-orange-600 relative before:content-"" before:h-full before:w-full before:absolute ${bg} before:bg-cover before:bg-center before:brightness-50 before:bg-fixed`}>
-        {/* <video className='w-full h-[15rem] absolute' src={video} autoPlay muted loop>
-        <source src={video} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> */}
     <div className='absolute flex px-[50px] justify-center items-center h-full w-full overflow-hidden'>
       <div className='h-full w-full flex flex-col justify-center items-center gap-5 text-[rgb(183,140,86)]'>
      <span className='text-[1rem] md:text-[1.5rem] lg:text-[1.5rem]'>{lines}</span>
