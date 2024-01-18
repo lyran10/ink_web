@@ -6,6 +6,6 @@ type Props = {
 
 export const Header = ({header} : Props) => {
   return (
-    <h1 className='bg-orange-600 w-[50%] font-bold text-[#f5f5f5] ps-5 text-[1.5rem] md:text-[2rem] lg:text-[2rem] mb-[50px]'>{header.split(" ")[0]} <em className='text-[#f5f5f5]'>{header.split(" ")[1]}</em></h1>
+    <h1 className='bg-orange-600 w-[100%] font-bold text-[#f5f5f5] ps-5 text-[1.5rem] md:text-[2rem] lg:text-[2rem] mb-[50px]'>{header.split(" ")[0]} <em className='text-[#f5f5f5]'>{header.split(" ")[1]}</em></h1>
   )
 }
