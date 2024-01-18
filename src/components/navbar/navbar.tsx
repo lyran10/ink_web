@@ -20,7 +20,7 @@ const {showItems} = ContextState() as Context
 
 
   return (
-    <nav className={`h-[80px] w-full duration-500 ${showItems === "left-0 opacity-[1]" ? "bg-orange-600" : "bg-[rgba(183,140,86,.18)]"} text-[#f5f5f5] fixed flex justify-between md:justify-around lg:justify-around items-center z-[1000]`}>
+    <nav className={`h-[80px] w-full duration-500 ${showItems === "left-0 opacity-[1]" ? "bg-orange-600" : "bg-[rgba(183,140,86,.80)]"} text-[#f5f5f5] fixed flex justify-between md:justify-around lg:justify-around items-center z-[1000]`}>
        <div className='h-[80px] w-[8rem]'>
           <img src={logo} alt="logo" className='h-full w-full'/>
         </div>

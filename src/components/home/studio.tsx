@@ -14,7 +14,7 @@ export const Studio = () => {
               studioData.map(({id,header,para} : {id :string,header: string,para : StudioPara}) => {
                 return(
                   <div key={id} className='w-full md:w-[80%] lg:w-[80%] flex flex-col justify-start relative items-start gap-2 shadow-testimonials p-5'>
-                    <em className='font-bold px-5 py-2 bg-[#741102] text-[#f5f5f5]'>{header}</em>
+                    <span className='font-bold px-5 py-2 bg-[#741102] text-[#f5f5f5]'>{header}</span>
                     <p>{para}</p>
                   </div>
                 )

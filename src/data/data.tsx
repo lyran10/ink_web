@@ -1,8 +1,9 @@
 import { Contact, StudioPara } from "../constants/constants"
-import recent1 from "../images/recent/recent1.jpg"
-import recent2 from "../images/recent/recent2.jpg"
 import recent3 from "../images/recent/recent3.jpg"
-import recent4 from "../images/recent/recent4.jpg"
+import recent2 from "../images/recent/recent2.jpg"
+import recent5 from "../images/recent/recent5.jpg"
+import recent6 from "../images/recent/recent6.jpg"
+
 import testimonial1 from "../images/testimonials/testimonial1.jpg"
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaLocationDot,FaPhone } from "react-icons/fa6";
@@ -11,6 +12,8 @@ import video1 from "../videos/VID-20240111-WA0052.mp4"
 import video2 from "../videos/WhatsApp Video 2024-01-11 at 20.30.28_73f8a0ec.mp4"
 import video3 from "../videos/VID-20240111-WA0053.mp4"
 import video4 from "../videos/VID-20240111-WA0058.mp4"
+// import video5 from "../videos/WhatsApp Video 2024-01-11 at 20.31.32_b71f7782.mp4"
+// import video6 from "../videos/WhatsApp Video 2024-01-11 at 20.32.58_61237438.mp4"
 
 
 // nav
@@ -51,7 +54,7 @@ export const moveNavCursor = {
 // recent art cards
 export const recentArtCards = [
     {
-        image : recent1
+        image : recent5
     },
     {
         image : recent2
@@ -60,7 +63,7 @@ export const recentArtCards = [
         image : recent3
     },
     {
-        image : recent4
+        image : recent6
     },
 ]
 
@@ -105,7 +108,15 @@ export const artistVideos = [
     {
         id : 4,
         video : video4
-    }
+    },
+    // {
+    //     id : 5,
+    //     video : video5
+    // },
+    // {
+    //     id : 6,
+    //     video : video6
+    // }
 ]
 
 // testimonials
@@ -191,5 +202,10 @@ export const inputs = [
         id : "email",
         type : "text",
         content : "Email",
+    },
+    {
+        id : "when",
+        type : "select",
+        options : ["In a week", "Within a month", "In the next three months"],
     },
 ]
