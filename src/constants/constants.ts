@@ -46,10 +46,10 @@ export enum Buttons {
 export enum Timers  {
     time = 2000,
     // testimonials
-    enable = 1500,
-    currentTimer = 800,
-    transOutTimer = 1000,
-    transInTimer = 1200,
+    enable = 500,
+    currentTimer = 100,
+    transOutTimer = 400,
+    transInTimer = 500,
 }
 
 // contact

@@ -12,23 +12,27 @@ import video1 from "../videos/VID-20240111-WA0052.mp4"
 import video2 from "../videos/WhatsApp Video 2024-01-11 at 20.30.28_73f8a0ec.mp4"
 import video3 from "../videos/VID-20240111-WA0053.mp4"
 import video4 from "../videos/VID-20240111-WA0058.mp4"
-// import video5 from "../videos/WhatsApp Video 2024-01-11 at 20.31.32_b71f7782.mp4"
-// import video6 from "../videos/WhatsApp Video 2024-01-11 at 20.32.58_61237438.mp4"
+import video5 from "../videos/WhatsApp Video 2024-01-11 at 20.31.32_b71f7782.mp4"
+import video6 from "../videos/WhatsApp Video 2024-01-11 at 20.32.58_61237438.mp4"
 
 
 // nav
 export const navItems = [
     {
         id : "HOME",
+        link : "/"
     },
     {
         id : "ABOUT",
+        link : "/about"
     },
     {
         id : "AWARDS",
+        link : "/awards"
     },
     {
         id : "CONTACT",
+        link : "/contact"
     },
 ]
 
@@ -109,14 +113,14 @@ export const artistVideos = [
         id : 4,
         video : video4
     },
-    // {
-    //     id : 5,
-    //     video : video5
-    // },
-    // {
-    //     id : 6,
-    //     video : video6
-    // }
+    {
+        id : 5,
+        video : video5
+    },
+    {
+        id : 6,
+        video : video6
+    }
 ]
 
 // testimonials
@@ -161,18 +165,18 @@ export const socialMedia = [
 
 ]
 
-// footer
-export const footerData = [
+// Contact
+export const contactData = [
     {
         id : "phone",
         content : Contact.number,
         icon : <FaPhone size={30}/>
     },
-    {
-        id : "location",
-        content : "Near Durga Temple Plot No 10, Opp Vailla Apartment, Vijay Nagar, Nagpur, Maharashtra 440013",
-        icon : <FaLocationDot size={30} />
-    },
+    // {
+    //     id : "location",
+    //     content : "Near Durga Temple Plot No 10, Opp Vailla Apartment, Vijay Nagar, Nagpur, Maharashtra 440013",
+    //     icon : <FaLocationDot size={30} />
+    // },
     {
         id : "email",
         content : "user@gmail.com",
@@ -206,6 +210,6 @@ export const inputs = [
     {
         id : "when",
         type : "select",
-        options : ["In a week", "Within a month", "In the next three months"],
+        options : ["", "In a week", "Within a month", "In the next three months"],
     },
 ]

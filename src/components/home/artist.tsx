@@ -21,11 +21,11 @@ export const Artist = () => {
             <DiscussButton/>
         </div>
      </div>
-     <div className='ms-0 md:ms-[30px] lg:ms-[30px] flex flex-wrap md:flex-wrap lg:flex-wrap justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start w-full h-full'>
+     <div className='flex flex-wrap md:flex-wrap lg:flex-wrap justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start w-full h-full'>
             {
               artistVideos.map(({id, video}) => {
                 return(
-                    <video key={id} className='' src={video} controls muted>
+                    <video key={id} className='h-[23rem]' src={video} controls muted>
                     <source className='' src={video} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>

@@ -26,7 +26,7 @@ const [trans, current, front, back, nextDisable, prevDisable, nextEvents, prevEv
         </div>
        </div>
       </div>
-      <button  disabled={nextDisable as boolean} {...nextEvents as Events} className={`w-5 h-5 absolute z-[1000] right-10 md:right-10 lg:right-20  rotate-45 duration-500 border-t border-r border-black cursor-pointer ${front ? "scale-75" : "scale-100"}`}></button>
+      <button  disabled={nextDisable as boolean} {...nextEvents as Events} className={`w-5 h-5 absolute z-[1000] right-10 md:right-10 lg:right-20 rotate-45 duration-500 border-t border-r border-black cursor-pointer ${front ? "scale-75" : "scale-100"}`}></button>
     </div>
   </section>
   )

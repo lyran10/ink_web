@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import { Banner } from './banner'
 import { RecentArt } from './recentArt'
 import { Qoutes } from '../common/qoutes'
@@ -11,11 +11,15 @@ import { Footer } from '../common/footer/footer'
 import { Form } from './form'
 
 export const Home = () => {
+  const [show,setShow] = useState<boolean>(false)
+
+  useEffect(() => { setShow(true) },[])
+
   return (
-    <main className='flex flex-col gap-[5rem] overflow-hidden'>
+    <main className={`flex flex-col gap-[5rem] overflow-hidden duration-500 ${show ? "opacity-[1]" : "opacity-[0]"}`}>
       <Banner/>
       <div className='hidden md:block lg:block'><SocialMedia /></div>
-      <div className='p-0 md:p-5 lg:p-5'>
+      <div className='px-0 md:px-5 lg:px-5'>
       <RecentArt/>
       <Qoutes qoute={QuotesAndPara.qoute1} lines={QuotesAndPara.aboutTattoo} bg="before:bg-quote"/>
       <Studio/>

@@ -4,6 +4,7 @@ import { Contact, NavItems } from '../../constants/constants'
 import { UseMoveEvents } from '../../customHooks/useMoveEvents'
 import logo from "../../images/logo/ink.png"
 import AppointmentButton from '../Buttons/appointmentButton'
+import { useNavigate } from 'react-router-dom'
 
 
 type Events = {
@@ -17,15 +18,16 @@ type Props = {
 }
 
 export const NavbarList = ({ULClasses,LIClasses} : Props) => {
+const navigate = useNavigate()
 const [move,events,width] = UseMoveEvents()
     
   return (  
   
     <ul className={`${ULClasses}`}>
         {
-            navItems.map(({id} : {id : string}) => {
+            navItems.map(({id,link} : {id : string,link :string}) => {
                 return(
-                    <li className={`${LIClasses}`} key={id} id={id} {...events as Events}>{id}</li>
+                    <li onClick={() => navigate(link)} className={`${LIClasses}`} key={id} id={id} {...events as Events}>{id}</li>
                 )
             })
         }
