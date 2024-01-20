@@ -12,12 +12,14 @@ useEffect(() => { setShow(true) },[])
 
 
   return (
-    <main className={`w-full bg-[#f5f5f5] relative duration-500 ${show ? "opacity-[1]" : "opacity-[0]"}`}>
+    <main className={`w-full relative flex justify-center items-center duration-500 ${show ? "opacity-[1]" : "opacity-[0]"}`}>
             <SocialMedia/>
+            <div className='w-full md:w-[97%] lg:w-[97%] bg-[#040303]'>
             <Qoutes qoute={""} lines={""} bg="before:bg-studio"/>
             <MapComponent/>
             <Communicate/>
             <Footer/>
+            </div>
     </main>
   )
 }

@@ -4,7 +4,7 @@ import { moveNavCursor } from '../data/data';
 
 type NavigationItems = {
     HOME: string;
-    ABOUT: string;
+    GALLERY: string;
     AWARDS: string;
     CONTACT: string;
   };

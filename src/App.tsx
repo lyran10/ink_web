@@ -7,6 +7,7 @@ import { Navbar } from './components/navbar/navbar';
 import { ContextState } from './context/context';
 import { Context } from 'vm'
 import { Contact } from './components/contact/contact';
+import { Gallery } from './components/gallery/gallery';
 
 function App() {
   const {showHome} = ContextState() as Context
@@ -18,6 +19,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/gallery' element={<Gallery/>}/>
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
       {/* </div> */}

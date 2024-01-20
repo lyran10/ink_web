@@ -6,7 +6,7 @@ import recent6 from "../images/recent/recent6.jpg"
 
 import testimonial1 from "../images/testimonials/testimonial1.jpg"
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
-import { FaLocationDot,FaPhone } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import video1 from "../videos/VID-20240111-WA0052.mp4"
 import video2 from "../videos/WhatsApp Video 2024-01-11 at 20.30.28_73f8a0ec.mp4"
@@ -23,8 +23,8 @@ export const navItems = [
         link : "/"
     },
     {
-        id : "ABOUT",
-        link : "/about"
+        id : "GALLERY",
+        link : "/gallery"
     },
     {
         id : "AWARDS",
@@ -41,16 +41,16 @@ export const moveNavCursor = {
             move : "translate-x-[13px]",
             width : "w-[15%]"
         },
-        ABOUT : {
+        GALLERY : {
             move :"translate-x-[89px]",
-            width : "w-[15%]"
+            width : "w-[18%]"
         },
         AWARDS : {
-            move : "translate-x-[166px]",
+            move : "translate-x-[176px]",
             width : "w-[20%]"
         },
         CONTACT : {
-            move : "translate-x-[256px]",
+            move : "translate-x-[267px]",
             width : "w-[20%]"
         }
 }
@@ -213,3 +213,10 @@ export const inputs = [
         options : ["", "In a week", "Within a month", "In the next three months"],
     },
 ]
+
+// gallery images
+
+export const galleryImages = Array.from({length : 26} ,() => 0).map((val,index) => `image${val + (index + 1)}`)
+
+
+

@@ -8,7 +8,8 @@ import Point from 'ol/geom/Point';
 import { Style, Icon } from 'ol/style';
 import { Vector as VectorLayer } from 'ol/layer';
 import { Vector as VectorSource } from 'ol/source';
-import pin from "../../../images/map/location.jpg"
+import FullScreen from 'ol/control/FullScreen';
+import pin from "../../../images/map/location2.webp"
 
 export const MapComponent: React.FC = () => {
   useEffect(() => {
@@ -41,7 +42,7 @@ export const MapComponent: React.FC = () => {
     const iconStyle = new Style({
       image: new Icon({
         src: pin,
-        scale: 0.1,
+        scale: 0.2,
       }), 
     });
 
@@ -49,14 +50,19 @@ export const MapComponent: React.FC = () => {
 
     vectorSource.addFeature(marker);
 
+    const fullScreenControl = new FullScreen();
+    map.addControl(fullScreenControl);
+
     return () => {
       // Cleanup code (if needed) when the component unmounts
       map.dispose();
     };
   }, []); // Empty dependency array ensures that useEffect runs only once
 
-  return  <div id='map' className='shadow-testimonials h-[30rem] w-full md:w-[90%] lg:w-[90%] left-[300px] m-auto -translate-y-[100px] z-[1000] top-[100px] bg-white' >
-
-  </div>
+  return  (
+    <div className='bg-[#f5f5f5]'>
+      <div id='map' className='shadow-testimonials bg-[#f5f5f5] h-[40rem] md:h-[50rem] lg:h-[50rem] w-[90%] md:w-[90%] lg:w-[90%] left-[300px] m-auto -translate-y-[100px] z-[1000] top-[100px]' ></div>
+    </div>
+  )
 };
 
